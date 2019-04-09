@@ -1,0 +1,98 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "lodash"
+  ],
+  "extends": "airbnb",
+  "rules": {
+    "semi": [2, "always"],
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_id"
+        ]
+      }
+    ],
+    "function-paren-newline": "off",
+    "object-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "import/no-extraneous-dependencies": [
+      "off"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "max-len": [
+      "error",
+      120
+    ],
+    "react/jsx-tag-spacing": [
+      "error",
+      {
+        "beforeSelfClosing": "never"
+      }
+    ],
+    "react/jsx-indent": [
+      "error",
+      4
+    ],
+    "react/jsx-indent-props": [
+      "error",
+      4
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "specialLink": [],
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ],
+    "lodash/matches-prop-shorthand": [
+      "error",
+      "never"
+    ],
+    "lodash/prop-shorthand": [
+      "error",
+      "never"
+    ],
+    "lodash/prefer-lodash-method": [
+      "error",
+      {
+        "ignoreMethods": [
+          "assign",
+          "find",
+          "map"
+        ]
+      }
+    ]
+  }
+}

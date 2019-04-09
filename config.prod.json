@@ -1,0 +1,10 @@
+{
+  "mode": "production",
+  "endpoint": "https://sioc-be-test.herokuapp.com/",
+  "authEndpoint" : "https://sioc-be-test.herokuapp.com/",
+  "server": {
+    "port": 3000,
+    "static": "public",
+    "morgan": "combined"
+  }
+}

@@ -1,0 +1,13 @@
+**/.*/
+node_modules/
+files/
+dist/
+coverage/
+build/
+/package-lock.json
+/config.json
+
+# misc
+.DS_Store
+.env
+*.log

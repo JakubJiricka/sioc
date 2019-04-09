@@ -1,0 +1,51 @@
+{
+  "clean": {
+    "dev": [
+      "public/lib",
+      "public/css",
+      "public/fonts/bootstrap",
+      "public/fonts/font-awesome"
+    ],
+    "dist": [
+      "coverage",
+      "dist"
+    ]
+  },
+  "copy": {
+    "dist": {
+      "src": [
+        "model/**",
+        "public/images/**",
+        "public/fonts/*.*",
+        "public/*.ico",
+        "resources/**",
+        "routes/**",
+        "services/**",
+        "toolkit/**",
+        "index.js"
+      ],
+      "dest": "dist/"
+    }
+  },
+  "htmlmin": {
+    "src": [
+      "public/*.html"
+    ],
+    "dest": "dist/public",
+    "options": {
+      "collapseWhitespace": true
+    }
+  },
+  "eslint": {
+    "src": [
+      "gulp/**/*.js",
+      "model/**/*.js",
+      "resources/**/*.js",
+      "routes/**/*.js",
+      "services/**/*.js",
+      "src/**/*.js",
+      "toolkit/**/*.js",
+      "./gulpfile.js"
+    ]
+  }
+}
